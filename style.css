@@ -42,22 +42,18 @@ font-weight:500;
 }
 
 /* HERO */
-
 .hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-url('port.png');
-
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-
-position:relative;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+  height:100vh;
+  background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+              url('port.png');
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
 }
 position:relative;
 display:flex;
@@ -326,4 +322,29 @@ grid-template-columns:1fr;
 display:none;
 }
 
+}
+/* ===== GLOBAL BACKGROUND UPGRADE ===== */
+
+body{
+  background: url('port.png') center/cover no-repeat fixed;
+}
+
+/* 让所有区块“浮起来” */
+.stats,
+.services,
+.about,
+.why,
+.testimonial,
+.contact{
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  margin: 40px 8%;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* HERO 不要重复背景 */
+.hero{
+  background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55));
 }
