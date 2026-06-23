@@ -315,9 +315,16 @@ grid-template-columns:1fr;
 }
 
 .why-grid{
-grid-template-columns:1fr;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
 }
-
+@media (max-width: 768px){
+  .why-grid{
+    grid-template-columns: 1fr;
+  }
+}
+  
 .nav-links{
 display:none;
 }
