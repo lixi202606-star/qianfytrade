@@ -45,9 +45,6 @@ font-weight:500;
 
 .hero{
 height:100vh;
-.hero{
-height:100vh;
-
 background:
 linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
 url('port.png');
