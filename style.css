@@ -348,3 +348,73 @@ body{
 .hero{
   background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55));
 }
+
+/* =========================
+   1. 全站背景统一优化
+========================= */
+body{
+  background: url('port.png') center/cover no-repeat fixed;
+}
+
+/* =========================
+   2. 所有内容区块玻璃效果（更高级透明）
+========================= */
+.stats,
+.services,
+.about,
+.why,
+.testimonial,
+.contact,
+.case-grid{
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin: 40px 8%;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   3. Cases 横排（重点）
+========================= */
+.case-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:25px;
+}
+
+/* 手机端 */
+@media(max-width:768px){
+  .case-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+/* =========================
+   4. Why Choose Us 改黑色统一
+========================= */
+.why{
+  background: rgba(255,255,255,0.65);
+  color:#111;
+}
+
+.why h2,
+.why p,
+.why-grid div{
+  color:#111;
+  border-color:#eee;
+}
+
+/* =========================
+   5. 卡片动画（高级感）
+========================= */
+.card,
+.why-grid div{
+  transition: all 0.3s ease;
+}
+
+.card:hover,
+.why-grid div:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
