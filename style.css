@@ -425,4 +425,24 @@ body{
   transform: translateY(-8px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.12);
 }
+/* Recent Sourcing Cases - layout */
+.cases-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 25px;
+  padding: 60px 10%;
+}
 
+.cases-content {
+  max-width: 700px;
+}
+
+.cases-image img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  display: block;
+}
