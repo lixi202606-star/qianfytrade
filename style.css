@@ -479,3 +479,7 @@ body{
   height: auto;
   display: block;
 }
+.cases-content {
+  width: 80% !important;
+  max-width: none !important;
+}
