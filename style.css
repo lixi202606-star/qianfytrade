@@ -435,8 +435,19 @@ body{
   padding: 60px 10%;
 }
 
+.cases-section {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  padding: 60px 10%;
+}
+
 .cases-content {
-  max-width: 700px;
+  flex: 1.6;   /* ⭐重点：加大左边 */
+}
+
+.cases-image {
+  flex: 1;
 }
 
 .cases-image img {
