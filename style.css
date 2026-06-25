@@ -457,3 +457,25 @@ body{
   box-shadow: 0 10px 25px rgba(0,0,0,0.1);
   display: block;
 }
+.cases-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ⭐关键：强制放大白色框 */
+.cases-content {
+  width: 60% !important;
+  max-width: 800px !important;
+}
+
+/* 图片区域 */
+.cases-image {
+  width: 70%;
+}
+
+.cases-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
