@@ -454,9 +454,9 @@ body{
   display: block;
 }
 .cases-section{
-  width: 60vw;
+  width: 80vw;
   margin-left: calc(-50vw + 40%);
-  padding: 80px 8%;
+  padding: 90px 8%;
   background: rgba(200,200,200,0.65);
   backdrop-filter: blur(10px);
 }
