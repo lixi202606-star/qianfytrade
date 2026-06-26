@@ -343,12 +343,8 @@ body{
 .why,
 .testimonial,
 .contact{
-  background: rgba(255,255,255,0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  margin: 40px 8%;
-  border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  margin: 40px 0;   /* ❌ 去掉 8% */
+  padding: 80px 8%; /* ✔ 用 padding 控制留白 */
 }
 
 /* HERO 不要重复背景 */
@@ -461,4 +457,11 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.cases-section{
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding: 100px 8%;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
 }
