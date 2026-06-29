@@ -787,6 +787,58 @@ body {
   transform: translateY(0);
 }
 
+
+.about-image-wrapper {
+  position: relative;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.about-image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 25px 30px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.75));
+}
+
+.overlay-text {
+  color: #fff;
+}
+
+.overlay-brand {
+  display: block;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.overlay-tagline {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-top: 4px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .overlay-brand {
+    font-size: 22px;
+  }
+  .image-overlay {
+    padding: 20px;
+  }
+}
+
 @media (max-width: 1024px) {
   .service-grid, .process-grid, .cases-grid, .why-grid {
     grid-template-columns: repeat(2, 1fr);
